@@ -10,8 +10,8 @@ https
     });
 
     response.on("end", () => {
-      //   check for existence of result directory else create a directory result
       const folder = new Folder("result");
+      // creates new result directory
       folder.createFolder();
       const file = new File();
       // creates posts.txt file
